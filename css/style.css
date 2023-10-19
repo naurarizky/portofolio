@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* persiapan */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Epilogue', sans-serif;
+ }
+
+ :root {
+    --bg-color: #FFFFFF;
+    --second-bg-color: #F9E6F0;
+    --text-color: #2B2B2B;
+    --tambahan: #FFA4D3;
+    --tambahanscnd: #FFD285;
+ }
+
+ html{
+    font-size: 62.5%;
+   overflow-x: hidden;
+ }
+
+ span{
+    color: var(--tambahan)
+  }
+ 
+ body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+ }
+ 
+ section{
+    min-height: 100vh;
+    padding: 2rem 9% 2rem;
+ }
+ 
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 1rem #ECE3FE;
+ }
+
+ .logo{
+    cursor: default;
+    width: 9.5rem;
+    height: auto;
+    transition: .5 ease;
+    transform: scale(1.02);
+ }
+
+ .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .home-content h3{
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: var(--text-color)
+  }
+ 
+  .home-content h1{
+    font-size: 7rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+ 
+  .home-content p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 1.4rem;
+  }
+
+  .navbar a:hover{
+    color: var(--tambahanscnd);}
+ 
+  .navbar a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;}
+
+    .home p{
+        font-size: 1.5rem;
+        color: var(--text-color);
+        font-weight: 300;
+      }
+
+      .btnawal{
+        display: inline-block;
+        padding: 1.5rem 3rem;
+        background: var(--tambahanscnd);
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--text-color);
+        margin-left: 2rem;
+        transition: .5 ease;
+        margin-top: 3rem;
+
+      }
+  
+      .btnawal:hover{
+        box-shadow: none;
+        transform: scale(1.05);
+      }
+
+      /* about me */
+
+      .slidedua{
+        background: var(--second-bg-color);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 5rem;        
+      }
+
+      .abtme{
+        margin-top: 8rem;
+        margin-left: 2rem;
+        transition: .5s ease;
+        align-items: center;
+      }
+      .abtme:hover{
+        box-shadow: none;
+        transform: scale(1.05);
+      }
+
+      .about-me h3{
+        font-size: 5rem;
+        color: var(--text-color);
+        text-align: center;
+        font-weight: 600;
+     }
+
+     .about-me p{
+        font-size: 2rem;
+        color: var(--text-color);
+        text-align: center;
+        font-weight: 200;
+        margin-top: 2rem;
+     }
+     
+     .social-media a{
+            display: inline-flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: transparent;
+            font-size: 3rem;
+            color: var(--tambahanscnd);
+            background: var(--bg-color);
+            margin-top: 2rem;
+            transition: .5s ease;  
+            margin-left: 5rem;     
+            margin-top: 5rem; 
+     }
+
+     .social-media a:hover {
+        background: var(--bg-color);
+        color: var(--tambahan);
+        box-shadow: 0 0 1rem var(--bg-color);
+    }
+
+    .learn-content h3{
+        font-size: 3rem;
+        color: var(--text-color);
+        text-align: center;
+        margin-top: 2rem;
+        font-weight: 600;
+      }
+
+      /* skill start */
+      .learn-img{
+        margin-top:6rem;
+      }
+
+      .slidetiga{
+        background: var(--bg-color);
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+      }
+
+       .learn-content2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-color);
+        gap: 2rem;
+        display: flex;
+        }
+  
+      .learn-content2 .learn-img{
+       flex: 1 1 30rem;
+       background: var(--second-bg-color);
+       padding: 3rem 2rem 4rem;
+       border-radius: 2rem;
+       text-align: center;
+       border: .4rem solid var(--tambahan);
+       transition: .5s ease;
+       align-items: center;
+      }
+  
+      .learn-content2 .learn-img:hover{
+          border-color: var(--tambahanscnd);
+          transform: scale(1.02);
+      }
+  
+      .learn-img i {
+          font-size: 5rem;
+          color: var(--main-color);
+      }
+
+      .learn-img h3{
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--text-color)
+      }
+          
+      .learn-img p{
+            font-size: 1.6rem;
+            margin: 1rem 0 3rem;
+            font-weight: 300;
+            color: var(--third-text-color);
+       }
+
+       .slidetiga h3{
+            color: var(--text-color);
+            font-size: 4rem;
+            font-weight: 600;
+            align-items: center;
+            display: flex;
+            margin-top: 5rem;
+            justify-content: center;
+      }
+      /* skill end */
+
+
+            /* ini buat portfolio */
+       .slideempat{
+          background: var(--second-bg-color);
+        }
+
+       .slideempat h2{
+          font-size: 6rem;
+          margin-bottom: 5rem;
+          align-items:center ;
+          justify-content: center;
+          display: flex;
+          margin-top: 4rem;
+        }
+
+        .portfolio-container{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          /* untuk mengatur ukuran atau jaraknya */
+          align-items: center;
+          gap: 2.5rem;
+         }
+
+        .portfolio-container .portfolio-box{
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem var(--bg-color);
+            display: flex;
+            overflow: hidden;
+        }    
+
+        .portfolio-box img{
+          width: 100%;
+        }
+
+        .portfolio-box img{
+            width: 100%;
+            transition: .5s ease;
+        }
+
+        .portfolio-box img:hover{
+            transform: scale(1.1);
+        }  
+
+        .portfolio-box .portfolio-layer{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.1), var(--tambahan));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0.4rem;
+            transform: translateY(100%);
+            transition: .5s ease;
+           }
+
+        .portfolio-box:hover .portfolio-layer{
+            transform: translateY(0);
+        }
+
+        .portfolio-layer h4{
+            font-size: 3rem;
+            color: var(--bg-color);
+          }
+
+        .portfolio-layer p{
+            font-size: 1.6rem;
+            margin: .3 0 1rem;
+            text-align: center;
+            color: var(--bg-color);
+        } 
+
+        .portfolio-layer a{
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              width: 5rem;
+              height: 5rem;
+              color: var(--bg-color);
+              background: var(--bg-color);
+              border-radius: 50%;
+          }
+
+          .portfolio-layer i{
+              font-size: 2rem;
+              color: var(--tambahanscnd);
+        }        
+        /* portofolio end */
+
+
+        /* Contact start */
+        .contact h2{
+          margin-bottom: 2rem;
+          font-size: 5rem;
+          margin-top: 5rem;
+          text-align: center;
+          justify-content: center;
+         }
+        
+         .contact form{
+          max-width: 70rem;
+          margin: 1rem auto;
+          text-align: center;
+          margin-bottom: 3rem;
+         }
+        
+         .contact form .input-box{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+         }
+        
+         .contact form .input-box input, .contact form textarea{
+          width: 100%;
+          padding: 1.5rem;
+          font-size: 1.6rem;
+          color: var(--text-color);
+          background: var(--second-bg-color);
+          border: .3rem solid var(--tambahan);
+          border-radius: .8rem;
+          margin: .7rem 0;
+         }
+         .contact form .input-box input{
+          width: 49%;
+          /* ngatur space nya ke samping */
+         }
+
+         .contact form textarea{
+          resize: none;
+          /* biar gabisa di atur */
+         }
+        
+        .btn{
+          margin-top: 2rem;
+          padding: 1.5rem 2.8rem;
+          /* atas bawah, kanan kiri */
+          cursor: pointer;
+          border-radius: 4rem;
+          font-size: 1.6rem;
+          color: var(--bg-color);
+          font-weight: 400;
+          background: var(--tambahanscnd);
+         }
+         /* contact end */
+
+         /* footer */
+         .footer{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2rem 9%;
+          background: var(--bg-color)
+         }
+        
+         .footer-text{
+          font-size: 1.6rem;}
+        
+          .footer-iconTop a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--second-bg-color);
+            padding: 0.8rem;
+            border-radius: .8rem;
+            transition: .5s ease;
+        
+          }
+        
+          .footer-iconTop a:hover {
+            box-shadow: 0 0 1rem var(--bg-color)
+          }
+        
+          .footer-iconTop a i{
+            font-size: 2.4rem;
+          }
+      /* footer end */
+     
+    
+   
+ 
